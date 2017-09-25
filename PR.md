@@ -1,4 +1,4 @@
-                                                                                        QA team/sept 2017
+                                                                                        QA team/sept-2017 
 ## CREATING A PULL REQUEST
 
 - This tutorial is in case you do not have write acces to a project, if you have, skip the fork part. 
