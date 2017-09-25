@@ -349,3 +349,18 @@ If you don’t want to type it every single time you push, you can set up a “c
 
 `git config --global credential.helper cache` 
 
+
+### How to work with multiple accounts
+
+
+Generate a unique SSH key for other GitHub account
+
+`ssh-keygen -t rsa -C "your-email-address`
+
+
+Save the file generated as :
+
+id_rsa_company, for example `~/.ssh/id_rsa_datio`
+
+
+
