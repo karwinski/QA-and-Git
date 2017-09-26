@@ -1,9 +1,6 @@
-### About git book 
-...
-[Link to think like a git](http://think-like-a-git.net)
+# Use cases, examples and other useful things of git
 
-[Link to a visual git reference](http://marklodato.github.io/visual-git-guide/index-en.html)
-
+## ProGit book notes:
 
 #### There are three stages that the files can reside in:
 1. Commited: the data is safely store in your local database
@@ -200,9 +197,8 @@ That command only downloads data to local repository -
  automaticaly fetch an d then merge a remote branch into your current branch. 
  
 
-### checkout is to copy files and switch betweem branches:
 
-#### Technical Notes from visual guide:
+## Technical Notes from [a visual git reference](http://marklodato.github.io/visual-git-guide/index-en.html):
 
 The contents of files are not actually stored in the index (.git/index) or in commit objects. Rather, each file is stored in the object database (.git/objects) as a blob, identified by its SHA-1 hash. The index file lists the filenames along with the identifier of the associated blob, as well as some other data. For commits, there is an additional data type, a tree, also identified by its hash. Trees correspond to directories in the working directory, and contain a list of trees and blobs corresponding to each filename within that directory. Each commit stores the identifier of its top-level tree, which in turn contains all of the blobs and other trees associated with that commit.
  
@@ -325,22 +321,25 @@ Stage:    4
 Worktree: 4
 
 ```
-The important part is:
+To resume, the important part is:
 
-git reset -- myfile COPIES from HEAD to stage:
+`git reset -- myfile` COPIES from HEAD to stage:
 
-git checkout -- myfile COPIES from stage to worktree:
+`git checkout -- myfile` COPIES from stage to worktree:
 
-git checkout HEAD -- myfile COPIES from HEAD to both stage and worktree:
+`git checkout HEAD -- myfile` COPIES from HEAD to both stage and worktree:
 
-git commit myfile COPIES from worktree to both stage and HEAD: 
+`git commit myfile` COPIES from worktree to both stage and HEAD: 
 
-### Tutorial to do a PR
+
+
+## Tutorial to do a PR
 
 https://github.com/AeroPython/PyFME/wiki/Tutorial-paso-a-paso-del-flujo-de-trabajo
 
 
-### Don’t type your password every time
+
+## Don’t type your password every time
 
 
 Don’t type your password every time
@@ -351,7 +350,7 @@ If you don’t want to type it every single time you push, you can set up a “c
 `git config --global credential.helper cache` 
 
 
-### How to work with multiple accounts
+## How to work with multiple accounts
 
  This is important if you have one GitHub personal account and other for your company, for instance.
 
@@ -459,7 +458,10 @@ And see the name and email address of your personal github account.
 
 
 
+References:
 
+[Link to think like a git](http://think-like-a-git.net)
 
+[Link to a visual git reference](http://marklodato.github.io/visual-git-guide/index-en.html)
 
 
