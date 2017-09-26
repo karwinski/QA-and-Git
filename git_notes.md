@@ -464,4 +464,6 @@ References:
 
 [Link to a visual git reference](http://marklodato.github.io/visual-git-guide/index-en.html)
 
+[Link to tutorial of how to work with multiple accounts](https://code.tutsplus.com/tutorials/quick-tip-how-to-work-with-github-and-multiple-accounts--net-22574)
+
 
