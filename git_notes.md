@@ -339,6 +339,7 @@ git commit myfile COPIES from worktree to both stage and HEAD:
 
 https://github.com/AeroPython/PyFME/wiki/Tutorial-paso-a-paso-del-flujo-de-trabajo
 
+
 ### Don’t type your password every time
 
 
@@ -422,27 +423,27 @@ Now, we need to push the first commit to origin, in the master branch for exampl
 
 
 Note that, this time, rather than pushing to git@github.com, we're using the custom host that we create in the
-config file: git@github-COMPANY
+config file: `git@github-COMPANY`
 
 
 - Return to GitHub, and you should now see your repository.
 Remember:
 
-    When pushing to your personal account, proceed as you always have.
-    For your company account, make sure that you use git@github-COMPANY as the host.
+When pushing to your personal account, proceed as you always have.
+For your company account, make sure that you use `git@github-COMPANY` as the host.
 
 
 - If you want to push commits using the user of your company github account you need to set up your name and e-mail address:
 
-
-
 Locate you in the directory after you initialized git:
 
 
+```
 git config --local user.name <name> # User name you use in your company github account
 git config --local user.email <email> # Email you registered in your company github account
+```
 
-Note that the --local flag is because we want the scope of this user available only to this repo. 
+Note that the `--local` flag is because we want the scope of this user available only to this repo. 
 
 To confirm your changes have been done:
 
