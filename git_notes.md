@@ -434,8 +434,8 @@ For your company account, make sure that you use `git@github-COMPANY` as the hos
 
 - If you want to push commits using the user of your company github account you need to set up your name and e-mail address:
 
-Locate you in the directory after you initialized git:
-
+Located in the git directory after you initialized git and type:
+For more info about [git configuration](https://git-scm.com/book/tr/v2/Customizing-Git-Git-Configuration)
 
 ```
 git config --local user.name <name> # User name you use in your company github account
