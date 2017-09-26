@@ -352,15 +352,113 @@ If you don’t want to type it every single time you push, you can set up a “c
 
 ### How to work with multiple accounts
 
+ This is important if you have one GitHub personal account and other for your company, for instance.
 
-Generate a unique SSH key for other GitHub account
+- Generate a unique SSH key for your company GitHub account:
 
-`ssh-keygen -t rsa -C "your-email-address`
+`ssh-keygen -t rsa -C "your-company-github-account-email-address`
 
 
-Save the file generated as :
+- Do not over-write your existing keys for your personal account. 
+when prompted, save the file generated as :
 
 id_rsa_company, for example `~/.ssh/id_rsa_datio`
+
+- Attach the new key
+login to your second GitHub account, browse to "Account Overview," and attach the new key, within the "SSH Public Keys" section. To retrieve the value of the key that you just created, return to the Terminal, and type: `vim ~/.ssh/id_rsa_COMPANY.pub` Copy the entire string that is displayed, and paste this into the GitHub text area.
+
+Next, because we saved our key with a unique name, we need to tell SSH about it. Within the Terminal, type: `ssh-add ~/.ssh/id_rsa_COMPANY` If successful, you'll see a response of "Identity Added."
+
+- Create a config file
+
+Now we need a way to specify when we wish to push to our personal account, 
+and when we should instead push to our company account. To do so, let's create a `config` file.
+
+```
+touch ~/.ssh/config
+vim config
+```
+
+Paste the following: 
+
+```
+#Default GitHub
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+
+```
+
+This is the default setup for pushing to our personal GitHub account. Notice that we're able to attach an identity file to the host. Let's add another one for the company account. Directly below the code above, add:
+
+```
+Host github-COMPANY
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_COMPANY
+```
+Save the page and exit!
+
+
+- Try it out
+
+Create a test directory, initialize git, and create your first commit.
+
+```
+git init
+echo "hello " > hello 
+git add hello
+git commit -m "first commit"
+```
+- Login to your company account, create a new repository, give it a name of "Test"
+ and then return to the Terminal and push your git repo to GitHub.
+
+`git remote add origin git@github-COMPANY:Company/testing.git` # Here we named origin to the github repo we created before. 
+
+Now, we need to push the first commit to origin, in the master branch for example. 
+
+`git push origin master`
+
+
+Note that, this time, rather than pushing to git@github.com, we're using the custom host that we create in the
+config file: git@github-COMPANY
+
+
+- Return to GitHub, and you should now see your repository.
+Remember:
+
+    When pushing to your personal account, proceed as you always have.
+    For your company account, make sure that you use git@github-COMPANY as the host.
+
+
+- If you want to push commits using the user of your company github account you need to set up your name and e-mail address:
+
+
+
+Locate you in the directory after you initialized git:
+
+
+git config --local user.name <name> # User name you use in your company github account
+git config --local user.email <email> # Email you registered in your company github account
+
+Note that the --local flag is because we want the scope of this user available only to this repo. 
+
+To confirm your changes have been done:
+
+`git config --local --list`
+
+You should see the name and email address you wrote before and probably other info.  
+
+And If your personal github account is global, you should type:
+
+`git config --global --list`
+
+And see the name and email address of your personal github account. 
+
+
+
+
 
 
 
