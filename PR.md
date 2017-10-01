@@ -62,6 +62,8 @@ And hit the `Create  pull request` button on this screen.
 
  
 
+Note: I'm thinking about to eliminate this part:
+
 ### If you have write acces to the project you do not need to do the fork to create a PR:
 
 - Just clone the project and follow the instructions of this guide. 
@@ -76,7 +78,7 @@ And hit the `Create  pull request` button on this screen.
 
 
 
-
+[other link](...)
 
 
 
