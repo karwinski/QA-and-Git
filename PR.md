@@ -71,6 +71,7 @@ Here, you should see the changes you made before and that mean your remote copy 
 ### Open a Pull Request on GitHub:
 
 Go to the `github.com/your_user/project` in the branch `my_branch` and click the button "New Pull Request".
+![]()
 
 Then, you will see a window where you can give a title and description to the Pull Request. This is important because let to the original owner of the project determine what you were trying to do, whether your proposed changes are correct, and whether accepting the changes would improve the original project.
 
