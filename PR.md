@@ -37,7 +37,7 @@ cd project
 
 ### Create a branch for your task from upstream/develop and switch to it:
 
-`git checkout -b <my_branch> upstream/develop`
+`git checkout -b <JIRA-TaskID/branch_name> upstream/develop`
 
 #### Make your changes in your new branch, taking into account the following recommendations:
 - Name your branch with the Jira task ID: JIRA-*/branch_name
@@ -62,20 +62,22 @@ git commit -m "message"
 
 ### Push the branch into your origin (GitHub fork):
 
-`git push origin my_branch` 
+`git push origin <JIRA-TaskID/branch_name>` 
 	
-To confirm your changes are available in the github fork, go to the `github.com/your_user/project` in the branch `my_branch`. 
+To confirm your changes are available in the github fork, go to the `github.com/your_user/project` in the branch `<JIRA-TaskID/branch_name>`. 
 
 Here, you should see the changes you made before and that mean your remote copy is updated. 
 
 ### Open a Pull Request on GitHub:
 
-Go to the `github.com/your_user/project` in the branch `my_branch` and click the button "New Pull Request".
+Go to the `github.com/your_user/project` in the branch `<JIRA-TaskID/branch_name>` and click the button "New Pull Request":
+
 ![](https://github.com/karwinski/QA-team/blob/Confluence/NewPR.png)
 
 Then, you will see a window where you can give a title and description to the Pull Request. This is important because let to the original owner of the project determine what you were trying to do, whether your proposed changes are correct, and whether accepting the changes would improve the original project.
 
-And hit the `Create  pull request` button on this screen.
+And hit the `Create  pull request` button on this screen:
+
 ![](https://help.github.com/assets/images/help/pull_requests/send-pull-request.png)
 
 
