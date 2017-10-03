@@ -98,5 +98,5 @@ Only then, Pull Request can be merged into upstream/develop branch. Please, use 
 
 [Chapter 6 of the ProGit second edition](https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf)
 
-[Carlos García Git Talk]()
+[Carlos García Git Talk](https://docs.google.com/presentation/d/1kaPmYRJ2UjGSzR1RAKazteYUmzxI5jtUhlSDpWF7lFM/edit?ts=59a9af45#slide=id.g247b09294f_0_103)
 
