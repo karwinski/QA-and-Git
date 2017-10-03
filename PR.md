@@ -1,8 +1,6 @@
                                                                                         QA team/sept-2017 
 ## CREATING A PULL REQUEST
-------
-- This tutorial is in case you do not have write acces to a project, if you have, skip the fork part. 
-------
+
 
 First you need to have installed git, if not, follow this [guide](https://git-scm.com/download).
 
@@ -72,7 +70,7 @@ Here, you should see the changes you made before and that mean your remote copy 
 
 Go to the `github.com/your_user/project` in the branch `<JIRA-TaskID/branch_name>` and click the button "New Pull Request":
 
-![](https://github.com/karwinski/QA-team/blob/Confluence/NewPR.png)
+![](https://github.com/karwinski/QA/blob/Confluence/NewPR.png)
 
 Then, you will see a window where you can give a title and description to the Pull Request. This is important because let to the original owner of the project determine what you were trying to do, whether your proposed changes are correct, and whether accepting the changes would improve the original project.
 
@@ -81,7 +79,13 @@ And hit the `Create  pull request` button on this screen:
 ![](https://help.github.com/assets/images/help/pull_requests/send-pull-request.png)
 
 
-- Two team members (QA member and another one) must approve your changes. They will mark with +1 comment. Only then, Pull Request can be merged into upstream/develop branch. Please, use “Squash and Merge” option.
+- Two team members (QA member and another one) must approve your changes. They will mark with +1 comment. 
+
+![](https://github.com/karwinski/QA/blob/Confluence/%2B1.png) 
+
+Only then, Pull Request can be merged into upstream/develop branch. Please, use “Squash and Merge” option:
+
+![](https://github.com/karwinski/QA/blob/Confluence/squas_merge.png)
 
 
 - If your PR is rejected, don’t create another branch to fix it. Make your new commits into the same branch and push it again into the same repository and branch (PR will be automatically updated). 
