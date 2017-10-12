@@ -145,6 +145,26 @@ git commit --amend
 You end up with a single commit – the second commit replaces the results of
 the first
 
+If you only want to modify your last commit message, it’s very simple:
+
+ `git commit --amend`
+ 
+That drops you into your text editor, which has your last commit message in
+it, ready for you to modify the message.
+
+It's useful for example if you staged and commited the wrong file:
+
+```
+git commit -m 'initial commit'
+git rm file
+git commit --amend
+
+```
+
+To remove entirely the last commit:
+
+`git reset HEAD^`
+
 #### Unstaging a Staged File
 
 - To undo a file that you staged for error:
