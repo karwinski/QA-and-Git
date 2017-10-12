@@ -8,7 +8,7 @@
 3. Staged: It means that you have marked  a modified file in its current version to go into your next commit snapshot
 
 #### Three main sections of a Git project:
-1. The git directory: is where Git stores the metadata and object database for your project.
+1. The .git directory: is where Git stores the metadata and object database for your project.
 2. The working directory: is a checkout of one version of your project, the files are pulled out of the compressed database in the Gt directory and placed on disk for you to use or modifiy
 3. The staging area: it is a file, generally contained in your Git directory, that
 stores information about what will go into your next commit. It’s sometimes re-
@@ -195,7 +195,8 @@ That command only downloads data to local repository -
  ` git pull <shortname> <branch> `
  
  automaticaly fetch an d then merge a remote branch into your current branch. 
- 
+
+
 
 
 ## Technical Notes from [a visual git reference](http://marklodato.github.io/visual-git-guide/index-en.html):
