@@ -123,7 +123,15 @@ were added and removed. It also puts a summary of the information at the end. It
  
  - To see the commits in a especific time there are --since and --until
  
- ` git log --since=2.hours`
+ ` git log --since=2.hours` 
+ 
+ - To see logs in a pretty format 
+ 
+ `git log --oneline --abbrev-commit --all --graph --decorate --color`
+ 
+ -The above line could have an alias:
+ 
+ `alias gg='git log --oneline --abbrev-commit --all --graph --decorate --color `
  
  #### Undoing Things
  
