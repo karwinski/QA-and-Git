@@ -224,6 +224,45 @@ That command only downloads data to local repository -
  
  automaticaly fetch an d then merge a remote branch into your current branch. 
 
+### Tags
+
+-There are two main types of tags: lightweight and annotated. The first is like a branch that points to a specific commit and annotated are full objects in the Git database (contain the tagger name, email, and date; have a tagging message).
+
+- To create a tag: 
+
+`git tag -a <tagName> -m "my version<tagName>"` --> This creates a tag in the last commit you made. 
+
+- To list tags: 
+
+`git tag`
+
+- You can see the tag data along with the commit that was tagged by using the git show command:
+
+`git show <tagName>`
+
+- To create a tag in a specific commit:
+
+`git tag -a <tagName> commit_hash `
+
+- When you create a tag with a version in a specifi commit, just the commits until that tag are part of the version. 
+
+-If you want to put a version of your repository in your working directory that looks
+like a specific tag, you can create a new branch at a specific tag with git
+checkout -b [branchname] [tagname] :
+
+`git checkout -b version2 v2.0.0` --> This command create the branch version2 and switch you to it. 
+ 
+   - Then You can verify it:
+
+` git log --oneline`
+
+- To delete a tag:
+
+`git tag -d tagName`
+
+- To push tags to a remote repository after you have created them, for example:
+
+`git push origin tagName`
 
 
 
