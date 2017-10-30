@@ -260,9 +260,9 @@ checkout -b [branchname] [tagname] :
 
 `git tag -d tagName`
 
-- To push tags to a remote repository after you have created them, for example:
+- To push tags to remote repositories after you have created them, for example:
 
-`git push origin tagName`
+`git push origin tagName` --This is the only way a colaborator could fetch the tag into his local repo.  
 
 
 
