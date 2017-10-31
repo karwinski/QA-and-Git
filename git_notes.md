@@ -403,7 +403,7 @@ To resume, the important part is:
 
 ## Tutorial to do a PR
 
-https://github.com/AeroPython/PyFME/wiki/Tutorial-paso-a-paso-del-flujo-de-trabajo
+https://github.com/karwinski/QA/blob/Confluence/PR.md
 
 
 
