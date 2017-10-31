@@ -510,7 +510,7 @@ git config --local user.name <name> # User name you use in your company github a
 git config --local user.email <email> # Email you registered in your company github account
 ```
 
-Note that the `--local` flag is because we want the scope of this user available only to this repo. 
+Note that the `--local` flag is because we want the scope of this user available only to this directory
 
 To confirm your changes have been done:
 
