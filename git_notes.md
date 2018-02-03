@@ -264,7 +264,7 @@ checkout -b [branchname] [tagname] :
 
 `git push origin tagName` --This is the only way a colaborator could fetch the tag into his local repo.  
 
-
+### Merge examples
 
 ## Technical Notes from [a visual git reference](http://marklodato.github.io/visual-git-guide/index-en.html):
 
