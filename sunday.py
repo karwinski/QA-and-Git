@@ -1,1 +1,1 @@
-print("sunday");
+print("second line");
